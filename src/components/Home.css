@@ -1,0 +1,129 @@
+.home {
+  padding: var(--section-padding);
+}
+
+.home .content h1 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-light);
+}
+
+.home .content h1 span {
+  color: var(--accent-blue);
+}
+
+.home .content p {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  color: #ccc;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.home .content .typing-text {
+  color: var(--accent-blue);
+  font-weight: 500;
+}
+
+.home .btn-about-me {
+  background: var(--accent-blue) !important;
+  border: 2px solid var(--accent-blue) !important;
+  color: var(--text-light) !important;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.home .btn-about-me:hover {
+  background: transparent !important;
+  color: var(--accent-blue) !important;
+}
+
+.home .social-icons li {
+  display: inline-block;
+}
+
+.home .social-icons a {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.home .social-icons a:hover {
+  transform: scale(1.2);
+  color: var(--accent-blue);
+  
+}
+
+/* Image container and glowing effect */
+.home .image-wrapper {
+  position: relative;
+  width: 80%;
+  padding-bottom: 80%; /* Creates a square aspect ratio */
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  /* This creates the glowing border effect */
+  border: 5px solid var(--accent-blue);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home .image-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.home .image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* ... (existing Home styles) */
+
+/* Updated styles for a professional social media button look */
+.home .social-icons {
+  padding: 0;
+  margin: 0;
+}
+
+.home .social-icons li {
+  list-style: none;
+}
+
+.home .social-icons a {
+  display: flex; /* Makes the anchor a flex container */
+  justify-content: center; /* Centers icon horizontally */
+  align-items: center; /* Centers icon vertically */
+  width: 45px;
+  height: 45px;
+  border-radius: 50%; /* Creates a perfect circle */
+  background-color: transparent;
+  border: 2px solid var(--accent-blue); /* Sets the border to your accent color */
+  font-size: 1.2rem;
+  color: var(--accent-blue); /* Sets the icon color to your accent color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  transition: all 0.3s ease; /* Enables smooth animation */
+  text-decoration: none;
+}
+
+/* This is the professional hover effect */
+.home .social-icons a:hover {
+  background-color: var(--accent-blue); /* Fills with accent color on hover */
+  color: var(--text-light); /* Changes icon color to white on hover */
+  transform: translateY(-5px) scale(1.05); /* Lifts and slightly scales */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Adds a more prominent shadow */
+}
+
+/* ... (the rest of your Home.css code remains unchanged) */
+
+/* This is the wrong way to do it, with conflicting rules */

@@ -1,0 +1,18 @@
+:root {
+  --section-padding: 8rem 0; /* Adjust this value */
+}
+
+/* Apply this to all section components */
+.home-section,
+.about-section,
+.skills-section,
+.education-section,
+.project-section,
+.experience-section,
+.contact-section,
+.footer-section {
+  padding: var(--section-padding);
+}
+html {
+  scroll-behavior: smooth;
+}

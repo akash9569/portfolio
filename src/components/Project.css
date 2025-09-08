@@ -1,0 +1,113 @@
+/* Custom styles for the Project section */
+.project-section {
+  padding: var(--section-padding);
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+.project-section .heading {
+  font-family: var(--font-heading);
+  color: var(--text-light);
+}
+
+.project-section .heading span {
+  color: var(--accent-blue);
+}
+
+.project-section .project-box {
+  background-color: #212121;
+  border: 2px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 30vw; /* **Fixed height for a consistent card size** */
+}
+
+.project-section .project-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border-color: var(--accent-blue);
+}
+
+.project-section .project-box img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.project-section .project-box:hover img {
+  transform: scale(1.05);
+}
+
+.project-section .project-box .content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-section .project-box .desc {
+  flex-grow: 1;
+}
+
+.project-section .desc p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #ccc;
+  min-height: 50px;
+}
+
+/* This is the key fix for button placement */
+.project-section .btns {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.project-section .btns .btn-project {
+  flex-grow: 1;
+  background: var(--accent-blue);
+  border: 2px solid var(--accent-blue);
+  color: var(--text-light);
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.project-section .btns .btn-project:hover {
+  background: transparent;
+  color: var(--accent-blue);
+}
+
+/* New button container */
+.viewall-btn-container {
+    padding-top: 2rem;
+}
+
+/* Style for the View All button */
+.btn-viewall {
+  background: var(--accent-blue);
+  border: 2px solid var(--accent-blue);
+  color: var(--text-light);
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-viewall:hover {
+  background: transparent;
+  color: var(--accent-blue);
+}

@@ -1,0 +1,87 @@
+/* Custom styles for the Contact section */
+.contact-section {
+  padding: var(--section-padding);
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+.contact-section .heading {
+  font-family: var(--font-heading);
+  color: var(--text-light);
+}
+
+.contact-section .heading span {
+  color: var(--accent-blue);
+}
+
+.contact-section .image-box img {
+  max-width: 100%;
+}
+
+.contact-section .form-group .field {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+/* This styles the icons for the input fields */
+.contact-section .form-group .field i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: var(--accent-blue);
+  font-size: 1.1rem;
+}
+
+/* This fixes the alignment for the textarea icon */
+.contact-section .form-group .message i {
+  position: absolute;
+  top: 20px; /* Positioned from the top for better alignment */
+  left: 15px;
+  transform: none; /* No vertical transform needed */
+  color: var(--accent-blue);
+  font-size: 1.1rem;
+}
+
+
+.contact-section .form-group input,
+.contact-section .form-group textarea {
+  width: 100%;
+  padding: 18px 20px 18px 50px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #252535;
+  color: var(--text-light);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-section .form-group input:focus,
+.contact-section .form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.4);
+}
+
+.contact-section .form-group textarea {
+  min-height: 150px;
+  padding: 18px 20px; /* Removed left padding to prevent text-icon overlap */
+}
+
+.contact-section .btn-submit {
+  background: var(--accent-blue);
+  border: 2px solid var(--accent-blue);
+  color: var(--text-light);
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-section .btn-submit:hover {
+  background: transparent;
+  color: var(--accent-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}

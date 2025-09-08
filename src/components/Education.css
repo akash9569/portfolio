@@ -1,0 +1,85 @@
+/* Custom styles for the Education section */
+.education-section {
+  padding: var(--section-padding);
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+.education-section .heading {
+  font-family: var(--font-heading);
+  color: var(--text-light);
+}
+
+.education-section .heading span {
+  color: var(--accent-blue);
+}
+
+.education-section .qoute {
+  font-style: italic;
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.education-section .education-box {
+  background-color: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 0.5rem;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 400px; /* Ensures a consistent card size */
+  display: flex; /* Makes content fill the space */
+  flex-direction: column;
+}
+
+.education-section .education-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  border-color: var(--accent-blue);
+}
+
+.education-section .education-box .image-wrapper {
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 220px; /* Fixed height for a consistent image frame */
+  width: 100%;
+  border: 2px solid #555;
+  transition: all 0.4s ease-in-out;
+}
+
+.education-section .education-box:hover .image-wrapper {
+  border-color: var(--accent-blue);
+}
+
+.education-section .education-box .image-wrapper img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* **This is the key fix.** It ensures images fill the container without distortion. */
+}
+
+.education-section .education-box .content {
+  flex-grow: 1; /* Allows content to expand and fill the remaining space */
+}
+
+.education-section .education-box .content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--accent-blue);
+}
+
+.education-section .education-box .content p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: #ccc;
+}
+
+.education-section .education-box .content h4 {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #ccc;
+  font-style: italic;
+}

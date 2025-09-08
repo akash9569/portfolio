@@ -1,0 +1,188 @@
+/* All Projects section styling */
+.all-projects-section {
+  padding: var(--section-padding);
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+.all-projects-section .heading {
+  font-family: var(--font-heading);
+  color: var(--text-light);
+}
+
+.all-projects-section .heading span {
+  color: var(--accent-blue);
+}
+
+.btn-add-project,
+.btn-publish-project {
+  background-color: var(--accent-blue);
+  border: 2px solid var(--accent-blue);
+  color: var(--text-light);
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-add-project:hover,
+.btn-publish-project:hover {
+  background-color: transparent;
+  color: var(--accent-blue);
+}
+
+/* Add Project form container */
+.add-project-container {
+  padding: 2rem;
+  background-color: #212121;
+  border-radius: 10px;
+  border: 2px solid #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.add-project-container h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--accent-blue);
+  margin-bottom: 1.5rem;
+}
+
+/* Form inputs */
+.add-project-container .form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #555;
+  color: var(--text-light);
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+}
+
+.add-project-container .form-control:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.4);
+}
+
+/* Styles for placeholder text */
+.add-project-container .form-control::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+/* Project card styling */
+.project-box {
+  background-color: #212121;
+  border: 2px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border-color: var(--accent-blue);
+}
+
+.project-box img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.project-box:hover img {
+  transform: scale(1.05);
+}
+
+.project-box .content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-box .content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+}
+
+.project-box .desc {
+  flex-grow: 1;
+}
+
+.project-box .desc p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #ccc;
+  min-height: 50px;
+}
+
+.project-box .btns {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.project-box .btns .btn-project {
+  flex-grow: 1;
+  background: var(--accent-blue);
+  border: 2px solid var(--accent-blue);
+  color: var(--text-light);
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.project-box .btns .btn-project:hover {
+  background: transparent;
+  color: var(--accent-blue);
+}
+
+.btn-edit-card {
+  background-color: transparent !important;
+  border: 2px solid var(--accent-blue) !important;
+  color: var(--accent-blue) !important;
+  border-radius: 50%;
+  width: 45px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.btn-edit-card:hover {
+  background-color: var(--accent-blue) !important;
+  color: #fff !important;
+  transform: translateY(-3px) scale(1.05);
+}
+
+.btn-delete-card {
+  background-color: transparent !important;
+  border: 2px solid #dc3545 !important;
+  color: #dc3545 !important;
+  border-radius: 50%;
+  width: 48px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.btn-delete-card:hover {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  transform: translateY(-3px) scale(1.05);
+}

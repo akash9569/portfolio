@@ -1,0 +1,95 @@
+/* Custom styles for the Footer section */
+.footer-section {
+  padding: 5rem 0 2rem;
+  background-color: #1a1a1a;
+  color: var(--text-light);
+}
+
+.footer-section .box {
+  margin-bottom: 2rem;
+}
+
+.footer-section .box h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.footer-section .box p,
+.footer-section .box a {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #ccc;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-section .box p i {
+  color: var(--accent-blue);
+  margin-right: 0.5rem;
+}
+
+.footer-section .box .share {
+  margin-top: 2rem;
+}
+
+/* This is the professional button style that works with your JSX */
+.footer-section .social-icons {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section .social-icons li {
+  list-style: none;
+}
+
+.footer-section .social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--accent-blue);
+  font-size: 1.2rem;
+  color: var(--accent-blue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* This is the professional hover effect */
+.footer-section .social-icons a:hover {
+  background-color: var(--accent-blue);
+  color: var(--text-light);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.footer-section .credit-text {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  color: #ccc;
+}
+.footer-section .credit-text .fa-heart{
+    color: red;
+}
+
+.footer-section .credit-text a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-section .links :hover{
+    color: var(--accent-blue);
+}

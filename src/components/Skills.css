@@ -1,0 +1,43 @@
+/* Custom styles for the Skills section */
+.skills-section {
+  padding: var(--section-padding);
+  background-color: #212121;
+}
+
+.skills-section .heading {
+  font-family: var(--font-heading);
+  color: var(--text-light);
+}
+
+.skills-section .heading span {
+  color: var(--accent-blue);
+}
+
+.skills-section .skill-item {
+  background-color: #1a1a1a;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-section .skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-color: var(--accent-blue); /* Highlights the card on hover */
+}
+
+.skills-section .skill-item img {
+  height: 48px;
+  width: auto;
+  filter: grayscale(0%); /* Remove grayscale on hover if you wish */
+}
+
+.skills-section .skill-item span {
+  font-family: var(--font-body);
+  font-weight: 500;
+  margin-top: 1rem;
+  color: var(--text-light);
+}

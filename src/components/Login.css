@@ -1,0 +1,52 @@
+/* Styling for the login page */
+.login-section {
+  min-height: 100vh;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  padding: var(--section-padding);
+}
+
+.login-container {
+  max-width: 400px;
+  background-color: #212121;
+  border-radius: 10px;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+}
+
+.login-container h2 {
+  font-family: var(--font-heading);
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.login-container .form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #555;
+  color: var(--text-light);
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+}
+
+.login-container .form-control:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.4);
+}
+
+.btn-login {
+  background: var(--accent-blue) !important;
+  border: 2px solid var(--accent-blue) !important;
+  color: var(--text-light) !important;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-login:hover {
+  background: transparent !important;
+  color: var(--accent-blue) !important;
+}
